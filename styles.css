@@ -1,0 +1,441 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  text-align: center;
+}
+
+p {
+  font-family: 'Montserrat';
+  color: #8f8f8f;
+  font-size: 0.95rem;
+}
+
+h2 {
+  font-family: 'Montserrat';
+  font-weight: 900;
+  /* color: #212529; */
+}
+
+h3 {
+  font-family: 'Montserrat';
+  font-weight: 600;
+}
+
+h5 {
+  font-family: 'Montserrat';
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+a {
+  color: inherit;
+}
+
+.white-bg {
+  background-color: #f4f4f4;
+  color: #1b1919;
+}
+
+.black-bg {
+  background-color: #121417;
+  color: #f4f4f4;
+}
+
+.header {
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  line-height: 2;
+  font-size: 3rem;
+  display: inline-block;
+}
+
+.header-black-bg {
+  border: 3px solid #f4f4f4;
+}
+
+.header-white-bg {
+  border: 3px solid #1b1919;
+}
+/*______*/
+
+.next {
+  font-family: 'Merriweather';
+}
+
+
+/* _________________________________________________________________________ */
+/* Front page */
+
+
+#background-front-page {
+  background-image: url("GOPR0404-2-2.jpg");
+  /* vh - viewport height - dopasowaie obrazu do wielkosci okna roboczego - w tym wypadku 100% wysokosci ekranu bedzie mialo zdjecie; 1vh = 1% of a monitor workig space; there is as well vw - viewport width; vmin - mniejsza z wartosci vh,vw; vmax - wieksza z wartosci vh,vw */
+  height: 100vh;
+  /* background-size: cover - Scales the image as large as possible without stretching the image. If the proportions of the image differ from the element, it is cropped either vertically or horizontally so that no empty space remains. */
+  background-size: cover;
+  /* Centers the image */
+  background-position: center;
+  /* The element behaves like a block element and lays out its content according to the flexbox model */
+  display: flex;
+  /* Centers (rows - so up, down plaszczyzna) */
+  flex-direction: column;
+  justify-content: center;
+  /* Centers (columns - so left, right plaszczyzna) */
+  align-items: center;
+}
+
+.navigation-bar {
+  position: absolute;
+  right: 8rem;
+  top: 6.05rem;
+}
+
+.navbar-toggler-icon {
+  color: white;
+}
+
+.nav-link {
+  font-family: 'Montserrat', sans-serif;
+  color: #f4f4f4;
+  font-weight: 500;
+  border-bottom: solid 1.5px #fefefe;
+}
+
+.nav-link:hover {
+  /* color: #ababab; */
+  color: #bbbbbb;
+  transition-duration: 0.2s;
+}
+
+.petike-name {
+  /* color: #f4f4f4; */
+  color: white;
+  line-height: 1.5;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  letter-spacing: 10px;
+  font-size: 800%;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+/*
+@media (max-width: 930px) {
+
+  .header {
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
+  .about-me-segment {
+    margin-top: 12%;
+    margin-bottom: 12%;
+}
+} */
+
+/* @media (max-width: 1213px) {
+  .navigation-bar {
+    top: 4rem;
+  }
+} */
+
+.arrow-down {
+  position: absolute;
+  color: #f4f4f4;
+  font-size: 2.5rem;
+  bottom: 5%;
+  opacity: 0.7;
+}
+
+.arrow-down:hover {
+  color: #ababab;
+  text-decoration: none;
+  /* Makes this little fade effect */
+  transition-duration: 0.2s;
+}
+
+
+/* _________________________________________________________________________ */
+/* ABOUT-ME 1 */
+
+
+#next {
+  /* text-align: center; */
+  /* padding: 15% 15% 15% 15%; */
+  background-color: #f4f4f4;
+}
+
+.next-section {
+  padding: 5% 12% 5% 12%;
+}
+
+.section-next {
+  margin-top: 6%;
+  margin-bottom: 6%;
+}
+
+.img-next {
+  color: #212529;
+  font-size: 3rem;
+  padding-bottom: 6%;
+}
+
+.img-next:hover {
+  color: #ababab;
+  /* To remove underline coming from href */
+  text-decoration: none;
+  transition-duration: 0.4s;
+  /* font-size: 3.5rem;
+  padding-bottom: 3.5%; */
+}
+
+
+/* _________________________________________________________________________ */
+/* ABOUT-ME 2 */
+
+
+#about-me {
+  /* background-color: #212529; */
+  /* background-color: #1b1919; */
+  /* background-color: #1f1f1f; */
+  /* background-color: #15171a; */
+  /* background-color: #17191c; */
+  background-color: #121417;
+  /* padding: 3% 15% 3% 15%; */
+  color: #f4f4f4;
+}
+
+.about-me-container {
+  padding: 3% 15% 3% 15%;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.about-me-segment {
+  padding: 4%;
+}
+
+.about-me-img-left {
+  height: 100px;
+  float: left;
+  margin-right: 30px;
+  filter: invert(100%);
+}
+
+.about-me-img-right {
+  height: 100px;
+  float: right;
+  margin-left: 30px;
+  /* To change color to white - invert from black */
+  filter: invert(100%);
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+
+/* _________________________________________________________________________ */
+ /* Porfolio */
+
+
+
+#portfolio {
+
+}
+
+.container-portfolio {
+  padding: 1% 12% 5% 12%;
+
+}
+.image-gallery {
+  padding-top: 1.4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 1.5rem; /* 15px */
+  grid-template-areas:
+      'img-1 img-2 img-3 img-3'
+      'img-1 img-4 img-5 img-6'
+      'img-7 img-7 img-8 img-6'
+      'img-9 img-9 img-9 img-9';
+}
+
+/* There are two classes, because there's more anchor tags in this website and I want to point out only from .image-gallery container */
+.image-gallery a {
+  width: 100%;
+  height: 15rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.image-gallery a i {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 3rem;
+  /* Giving position relative to use z-index */
+  position: relative;
+  z-index: 100;
+  padding: 1rem 3rem;
+  border: 2px solid rgba(255,255,255, 0.6);
+  border-radius: .4rem;
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+.image-gallery a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0, .8);
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+.image-gallery a:hover i,
+.image-gallery a:hover::before {
+  opacity: 1;
+}
+
+.img-1 {
+  grid-area: img-1;
+  background-image: url("img-1.jpg");
+  /* Because in ".image-gallery a" we gave height of 25rem and we want img-1 to take two places in one column, so we need to double height*/
+  /* Grid gap is 1.5rem and we need to cover it as well, so that's why 51.5rem */
+  min-height: 31.5rem;
+}
+.img-2 {
+  grid-area: img-2;
+  background-image: url("img-2.jpg");
+}
+.img-3 {
+  grid-area: img-3;
+  background-image: url("img-3.jpg");
+}
+.img-4 {
+  grid-area: img-4;
+  background-image: url("img-4.jpg");
+}
+.img-5 {
+  grid-area: img-5;
+  background-image: url("img-5.jpg");
+}
+.img-6 {
+  grid-area: img-6;
+  background-image: url("img-6.jpg");
+  min-height: 31.5rem;
+}
+.img-7 {
+  grid-area: img-7;
+  background-image: url("img-7.jpg");
+}
+.img-8 {
+  grid-area: img-8;
+  background-image: url("img-8.jpg");
+}
+.img-9 {
+  grid-area: img-9;
+  background-image: url("img-9.jpg");
+}
+
+@media (max-width: 992px) {
+  .image-gallery {
+    grid-template-areas:
+        'img-1 img-1 img-2 img-2'
+        'img-1 img-1 img-3 img-3'
+        'img-4 img-4 img-5 img-5'
+        'img-6 img-7 img-7 img-7'
+        'img-8 img-8 img-9 img-9'
+  }
+
+  .img-6 {
+    min-height: 15rem;
+  }
+}
+
+/* Carousel Bootstrap changes - portfolio section*/
+
+.carousel-inner {
+  padding-top: 50px;
+  background-color: inherit;
+}
+
+.carousel-indicators {
+  top: 1rem;
+}
+
+.carousel-indicators h5 {
+  color: #212529;
+  cursor: pointer;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+  opacity: .5;
+  transition: opacity 0.6s ease;
+}
+.carousel-indicators h5:hover {
+  color: #212529;
+  cursor: pointer;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
+  opacity: .5;
+  transition: opacity 0.6s ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .carousel-indicators h5 {
+    transition: none;
+  }
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  filter: invert(1);
+}
+
+/* _________________________________________________________________________ */
+/* Footer */
+
+
+/* To center "Peter Szilagyi" - position of a parent flex, justify-content & align-items set to auto, child: margin 0 */
+#footer {
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 3px;
+}
+
+.icon-footer {
+  font-size: 150%;
+  margin-bottom: 1.5%;
+  margin-left: 1%;
+}
+
+.p-footer {
+  line-height: 1.5;
+  font-size: 80%;
+}
+
+.p-webdesigner {
+  text-align: right;
+  margin-right: 15px;
+  margin-bottom: 5px;
+  font-size: 70%;
+  color: #353b45;
+  font-style: italic;
+}
