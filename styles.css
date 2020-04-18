@@ -191,7 +191,6 @@ a {
   padding-bottom: 3.5%; */
 }
 
-
 /* _________________________________________________________________________ */
 /* ABOUT-ME 2 */
 
@@ -368,6 +367,8 @@ a {
   .img-6 {
     min-height: 15rem;
   }
+
+
 }
 
 /* Carousel Bootstrap changes - portfolio section*/
@@ -438,4 +439,56 @@ a {
   font-size: 70%;
   color: #353b45;
   font-style: italic;
+}
+
+/* MEDIA QUERY */
+
+@media screen and (max-width: 578px){
+  .petike-name {
+    font-size: 300%;
+  }
+ .section-next {
+    margin-top: 12%;
+    margin-bottom: 12%;
+  }
+
+
+
+  .carousel-indicators h5 {
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+  }
+
+  .carousel-indicators h5:hover {
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+  }
+
+/* USUN, JESLI MAJA BYC JEDNAK DWA RZEDY */
+
+  .image-gallery {
+    grid-template-areas:
+        'img-1 img-1 img-1 img-1'
+        'img-2 img-2 img-2 img-2'
+        'img-3 img-3 img-3 img-3'
+        'img-4 img-4 img-4 img-4'
+        'img-5 img-5 img-5 img-5'
+        'img-6 img-6 img-6 img-6'
+        'img-7 img-7 img-7 img-7'
+        'img-8 img-8 img-8 img-8'
+        'img-9 img-9 img-9 img-9'
+  }
+
+  .img-1 {
+    min-height: 15rem;
+  }
+
+  .img-6 {
+    min-height: 15rem;
+  }
+
+  .p-webdesigner {
+    font-size: 20%;
+  }
+
 }
