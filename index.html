@@ -2,13 +2,13 @@
 <html lang="en" dir="ltr">
 
 <head>
-<!-- BEZ TEGO MOZE NIE DZIALAC MEDIA QUERY I COL- -->
+
   <meta charset="utf-8" content="width=device-width, initial-scale=1" name="viewport">
   <title>㎰ Peter Szilagyi</title>
 
   <link href="https://fonts.googleapis.com/css?family=Merriweather:400,600,900|Montserrat:400,600,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles-temp.css">
 
   <script src="https://kit.fontawesome.com/efb6ec8770.js" crossorigin="anonymous"></script>
 
@@ -19,41 +19,53 @@
 
 <body>
 
-<div id="background-front-page">
 
-  <div class="navigation-bar">
-    <nav class="navbar-expand-md">
 
-      <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-        <ul class="nav justify-content-end">
-
-          <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#about-me">About Me</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#portfolio">Portfolio</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </nav>
+<div class="progress-line">
+  <!-- <h2>Scroll Indicator</h2> -->
+  <div class="progress-container">
+    <div class="progress-bar" id="myBar"></div>
   </div>
+</div>
+
+
+
+<div class="navigation-bar">
+
+  <nav class="navbar-expand-lg">
+
+    <button class="navbar-toggler toggler-example" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="nav justify-content-end">
+
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#about-me">About Me</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#portfolio">Portfolio</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+
+      </ul>
+    </div>
+
+  </nav>
+
+</div>
+
+
+<div id="background-front-page">
 
   <h1 class="petike-name">PÉTER SZILÁGYI</h1>
 
@@ -73,23 +85,24 @@
   col-sm   >= 768px (tablets)
   col-xs    < 768px (phones)
 -->
-    <div class="col-lg-4 col-sm-6 col-xs-12 section-next">
+    <div class="col-lg-4 col-sm-6 col-xs-12 section-next section-next-photography">
 
-      <a class="fas fa-camera img-next" href="#portfolio"></a>
+      <a class="fas fa-camera img-next" href="#portfolio" data-toggle="tooltip" data-placement="right" title="Click Me!"></a>
       <h2>Photography.</h2>
       <p>See my portfolio.</p>
 
     </div>
-
-    <div class="col-lg-4 col-sm-6 col-xs-12 section-next">
+<!-- <hr> -->
+    <div class="col-lg-4 col-sm-6 col-xs-12 section-next section-next-speedway">
 
       <a class="fas fa-motorcycle img-next" href="https://www.instagram.com/salakpor/"></a>
       <h2>Speedway.</h2>
       <p>The dust, man!</p>
 
     </div>
+<!-- <hr> -->
 
-    <div class="col-lg-4 col-sm-12 col-xs-12 section-next">
+    <div class="col-lg-4 col-sm-12 col-xs-12 section-next section-next-instagram">
 
       <a class="fas fa-hashtag img-next" href="https://www.instagram.com/peterszilagyi/"></a>
       <h2>Social media</h2>
@@ -113,7 +126,7 @@
 
     <div class="about-me-1 about-me-segment">
 
-      <img src="hungarian-parliament.svg" class="about-me-img-left" alt="hungarian-parliament">
+      <img src="hungarian-parliament.svg" class="about-me-img about-me-img-left" alt="hungarian-parliament">
       <h3 class="text-left">Hungary</h3>
       <p class="text-left">I'm from Debrecen.</p>
 
@@ -121,7 +134,7 @@
 
     <div class="about-me-2 about-me-segment">
 
-      <img src="motocross-helmet.png" class="about-me-img-right" alt="speedway-helmet">
+      <img src="motocross-helmet.png" class="about-me-img about-me-img-right" alt="speedway-helmet">
       <h3 class="text-right">Speedway.</h3>
       <p class="text-right">Since I was 6.</p>
 
@@ -129,7 +142,7 @@
 
     <div class="about-me-3 about-me-segment">
 
-      <img src="school.svg" class="about-me-img-left" alt="university">
+      <img src="school.svg" class="about-me-img about-me-img-left" alt="university">
       <h3 class="text-left">University.</h3>
       <p class="text-left">Journalism and social communication.</p>
 
@@ -244,6 +257,16 @@
 
 
 
+<div id="contact" class="black-bg">
+  <h2 class="header header-black-bg">Contact Me</h2>
+  <h3 class="h3-contact-me">I'm available now.</h3>
+  <p class="p-contact-me">If you think you need my help, want to get in touch or you just like speedway as much as I do.</p>
+  <a href="mailto:petispeedway@gmail.com" class="myButton"><i class="fas fa-paper-plane icon-paper-plane"></i> MESSAGE ME</a>
+
+</div>
+
+
+
 
 <div id="footer" class="black-bg">
 
@@ -251,12 +274,17 @@
   <a href="https://instagram.com/peterszilagyi"><ion-icon class="icon-footer" name="logo-instagram"></ion-icon></a>
   <a href="https://linkedin.com/in/peterszilagyi30"><ion-icon class="icon-footer" name="logo-linkedin"></ion-icon></a>
   <a href="https://twitter.com/peterszilagyi30"><ion-icon class="icon-footer" name="logo-twitter"></ion-icon></a>
-  <p class="p-footer">© 2020 Copyright Peter Szilagyi</p>
+  <p class="p-footer">© 2020 <a href="https://kasiandrut.github.io/peterszilagyi"><u>Peter Szilagyi</u></a>. All rights reserved.</p>
   <p class="p-webdesigner">Created by: Katarzyna Andrusieczko</p>
 
 </div>
 
+<!-- Icons from web-->
 <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+<!-- jQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- JavaScript -->
+<script src="index.js" charset="utf-8"></script>
 
 </body>
 
